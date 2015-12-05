@@ -411,7 +411,6 @@ body {
   background-image: -ms-linear-gradient( 90deg, rgb(123,120,120) 0%, rgb(169,168,168) 100%);
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
   border: 1px solid #9c9c9c;
-  height: 55px; 
   margin-bottom: 40px;
 }
 .no-cssgradients .rightMenuHead {
@@ -472,37 +471,39 @@ body {
   height: 19px;
   margin-right: 15px;
   margin-bottom: 10px;
-  border: 1px solid #d4d4d4;
-  border-radius: 0 2px 2px 0;
+  border: 1px solid #b8b8b8;
+  border-radius: 0 12% 12% 0;
   border-left: none;
-  background-image: -webkit-linear-gradient( 270deg, #f8f8f8 0%, #e6e4e4 50%);
-  background-image: -o-linear-gradient( 270deg, #f8f8f8 0%, #e6e4e4 50%);
-  background-image: -moz-linear-gradient( 270deg, #f8f8f8 0%, #e6e4e4 50%);
+  background-image: -webkit-linear-gradient( 270deg, #fff , #e6e4e4 );
+  background-image: -o-linear-gradient( 270deg, #fff , #e6e4e4 );
+  background-image: -moz-linear-gradient( 270deg, #fff , #e6e4e4 );
   box-shadow: 0px 0px 2px  #d3d2d1;
+  z-index: 1;
 }
 .button_back:before {
 	  box-sizing: border-box;
   	content: '°';
   	font-family: 'Open Sans Lite';
-  	font-size: 12px;
-  	color: #467366;
+  	font-size: 16px;
+  	color: #b8b8b8;
   	text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
   	display: block;
  	  position: absolute;
-   	background-image: -webkit-linear-gradient( 315deg, #f8f8f8 , #e6e4e4 60%);
-    background-image: -o-linear-gradient( 315deg, #f8f8f8 , #e6e4e4 60%);
-    background-image: -moz-linear-gradient( 315deg, #f8f8f8 , #e6e4e4 60%);
+   	background-image: -webkit-linear-gradient( 315deg, #fff , #e6e4e4 );
+    background-image: -o-linear-gradient( 315deg, #fff , #e6e4e4 );
+    background-image: -moz-linear-gradient( 315deg, #fff , #e6e4e4 );
   	left: -8px;
  	  top: 2px;
    	width: 15px;
   	height: 15px;
-  	padding-top: 4px;
+  	padding-top: 2px;
   	padding-left: 2px;
-  	border-left: 1px solid #d4d4d4;
-  	border-bottom: 1px solid #d4d4d4;
+  	border-left: 1px solid #b8b8b8;
+  	border-bottom: 1px solid #b8b8b8;
   	border-radius: 1px 0 1px 35%;
+    box-shadow: -1px 1px 1px  rgba(211,210,209,0.53);
   	transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
 }
 .no-csstransforms .button_back:before {
     box-sizing: border-box;
@@ -522,17 +523,18 @@ body {
     border-left: 1px solid #d4d4d4;
     border-bottom: 1px solid #d4d4d4;
     border-radius: 1px 0 1px 35%;
-    
 }
 .button_back_text {
-	margin:0;
-	padding-left:10px;
+	position: relative;
+  margin:0;
+	padding-left:5px;
 	padding-right: 5px;
 	font-family: 'Open Sans Semibold';
   font-size: 9px;
   color: #467366;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.45);
 	vertical-align: 4px;
+  z-index: 2;
 }
 .experience, .experience_last{
   width: 560px;

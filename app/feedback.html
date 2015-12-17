@@ -27,6 +27,9 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 	<script type="text/javascript" src='js/modernizr.js'></script>	
+	<script type="text/javascript" src='bower/jquery/jquery.js'></script>
+	<script type="text/javascript" src='bower/jquery-placeholder/jquery.placeholder.js'></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -78,29 +81,28 @@
 				<div class="rightMenuHead">
 					<p class="rightMenuHead_text text_lite">У Вас интересный проект? Напишите мне</p>
 				</div>
-				<form>
+				<div class="name_tooltip tooltips">Введите имя</div>
+				<div class="email_tooltip tooltips">Введите e-mail</div>
+				<div class="message_tooltip tooltips">Ваш вопрос</div>
+				<div class="captcha_tooltip tooltips">Пройдите проверку</div>
+				<form id="feedback" name='feedback' method="GET">
 					<div class="wrapForm cf">
 						<div class="first_form cf">
 							<div class="form_name">
 								<p>Имя</p>
-								<input  class='first_form_input first_form_input_text' type="text" placeholder="Введите свое имя" ></input>
+								<input  id='name' name='name' class='first_form_input first_form_input_text' type="text" placeholder="Введите свое имя" ></input>
 							</div>
 							<div class="form_email">
 								<p>Email</p>
-								<input class='first_form_input first_form_input_text' type="text" placeholder="Введите свой email" ></input>
+								<input id='email' name='email' class='first_form_input first_form_input_text' type="text" placeholder="Введите свой email" ></input>
 							</div>
 						</div>
 						<div class="message">
 							<p>Сообщение</p>
-							<textarea  class='message_input first_form_input_text' placeholder="Кратко в чем суть" ></textarea>
+							<textarea  id='message' name='message' class='message_input first_form_input_text' placeholder="Кратко в чем суть" ></textarea>
 						</div>
 						<div class="captcha">
-							<p>Введите текст, указанный на картинке</p>
-							<div class="captcha_pic"></div>
-							<div class="form_captcha">
-								<input class='first_form_input first_form_input_text' type="text" placeholder="Введите код" ></input>
-							</div>
-						</div>
+						<div class="g-recaptcha" data-sitekey="6LdVoxITAAAAAG66jemEVBq_63AIxpMcEJyT41Yq"></div></div>
 						<div class="submit">
 							<button type="submit" class="submint_button">Отправить</button>
 							<button type="reset" class="clear_button">Очистить</button>
@@ -121,8 +123,7 @@
 				</div>
 			</div>
 		</footer>
-	<script type="text/javascript" src='bower/jquery/jquery.js'></script>
-	<script type="text/javascript" src='bower/jquery-placeholder/jquery.placeholder.js'></script>
 	<script type="text/javascript" src='js/placeholder.js'></script>
+	<script type="text/javascript" src='js/feedback.js'></script>
 </body>
 </html>

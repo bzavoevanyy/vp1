@@ -10,7 +10,7 @@
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin-bottom: 330px;
+	margin-bottom: 100px;
 }
 .my_work_list_item_wrap {
 	width: 167px; 
@@ -117,5 +117,155 @@
 	color: #727070;
 	padding-left: 20px;
 	padding-top: 5px;
+}
+.modal_window {
+	display: none;
+	position: relative;
+	margin: 0 auto;
+	width: 363px;
+	border-radius: 7px;
+	border : 1px solid #bababa;
+	background-image: -moz-linear-gradient(#fbfbfa, #f0eeed);
+    background-image: -webkit-linear-gradient(#fbfbfa, #f0eeed);
+	background-image: -ms-linear-gradient(#fbfbfa, #f0eeed);
+	box-shadow: 1px 1px 1px  #bababa;
+}
+.modal_window:before {
+	position: absolute;
+	content: 'Добавление проекта';
+	font-family: 'Open Sans Lite';
+	font-size: 12px;
+	top: -20px;
+	left: 20px;
+	color: #f8f7f6;
+}
+.close_window {
+	display: block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	right:4px;
+	top:6px;
+	background-image: url(../images/X.png);
+	background-repeat:  no-repeat;
+	background-position: center;
+
+}
+.add_project {
+	position: relative;
+	width: 325px;
+	margin: 25px auto;
+
+}
+.project {
+	margin-bottom: 5px;
+}
+.headline {
+	font-family: 'Open Sans Regular';
+	font-size: 14px;
+	color: #727070;
+	margin-bottom: 5px;
+
+}
+.project_name, .project_picture, .project_url, .project_disc {
+	height: 41px;
+	width: 320px;
+	border-radius: 5px;
+	border : 1px solid #bababa;
+	font-family: 'Open Sans Lite';
+	font-size: 12px;
+	color: #c7c6c6;
+	padding-left: 5px;
+	background-image: linear-gradient(#fbfcfd , #f4f4f4 );
+
+}
+.project_picture {
+	width: 271px;
+	height: 43px;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	line-height: 43px;
+}
+.add_picture {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-top: -3px;
+	margin-left: -9px;
+	letter-spacing: 0;
+	font-size: 0;
+	word-spacing: 0;
+}
+.fakeinput {
+	display: none;
+}
+.project_disc {
+	min-height: 110px;
+}
+.submit_project {
+	position: relative;
+	margin: 0 auto;
+	width: 130px;
+}
+.submit_project_button {
+	margin: 0;
+}
+.wrap_tooltips {
+	position: absolute;
+	width: 200px;
+	left: -53%;
+	top: 0;
+}
+.project_tooltip {
+	position: absolute;
+	display: block;
+	top: 58px;
+	right: 0;
+	width : 125px;
+	height: 26px;
+	background-image: -moz-linear-gradient(#f3a58b,#d8825e);
+	background-image: -o-linear-gradient(#f3a58b,#d8825e);
+	background-image: -webkit-linear-gradient(#f3a58b,#d8825e);
+	border-radius: 6px;
+	border: 1px solid #d27c5e;
+	border-top: 1px solid #f19a7c;
+	box-shadow: 0 1px 2px #d9d8d7, inset 0px 1px 1px #f7c0ad;
+	font-family: 'Open Sans Semibold';
+	font-size: 12px;
+	text-shadow: 0 1px #f1c2a7;
+	text-align: center;
+	line-height: 26px;
+	color: #9a4e32;
+}
+.project_tooltip:before {
+	content: '';
+	display:block;
+	position: absolute;
+	top: 9px;
+	left: 97%;
+	height: 8px;
+	width: 8px;
+	background-image: -moz-linear-gradient(#f3a58b,#d8825e);
+	background-image: -o-linear-gradient(#f3a58b,#d8825e);
+	background-image: -webkit-linear-gradient(-45deg,#f3a58b,#d8825e);
+	border-top: 1px solid #f19a7c;
+	border-right: 1px solid #d27c5e;
+	transform : rotate(45deg);
+}
+.project_tooltip_name {
+	display: none;
+}
+.project_tooltip_picture {
+	top : 130px;
+	width: 160px;
+	display: none;
+}
+.project_tooltip_url {
+	top: 210px;
+	display:none;
+}
+.project_tooltip_disc {
+	top: 320px;
+	display:none;
 }
 

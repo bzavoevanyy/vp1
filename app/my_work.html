@@ -25,8 +25,11 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
 	<link rel="stylesheet" type="text/css" href="css/style_my_work.css">
 	<script type="text/javascript" src='js/modernizr.js' ></script>
+	<script type="text/javascript" src='bower/jquery/jquery.js'></script>
+	<script type="text/javascript" src='bower/bPopup/jquery.bpopup.js'></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -186,6 +189,42 @@
 				</div>
 			</section>
 		</div>
+		<div class="modal_window">
+			<a href="#" class="close_window"></a>
+			<form method="post" action='php/add_project.php'  class="add_project" enctype="multipart/form-data">
+			<label>
+				<div class="project">
+					<p class="headline">Название проекта</p>
+					<input type="text" name= 'name' class="project_name" placeholder='Введите название'>
+				</div>
+			</label>
+			<label>
+				<div  class="project">
+					<p class="headline">Картинка проекта</p>
+					<span class="project_picture">Загрузите изображение</span>
+					<input type="file" name='picture' class="fakeinput">
+					<img class='add_picture' src="images/iCloud-down.png" alt="">
+				</div>
+			</label>
+			<div class="project">
+				<p class="headline">URL проекта</p>
+				<input type="text" name='URL' class="project_url" placeholder='Добавьте ссылку'>
+			</div>
+			<div class="project">
+				<p class="headline">Описание проекта</p>
+				<textarea name="disc" id="" class="project_disc" placeholder='Пара слов о Вашем проекте'></textarea>
+			</div>
+			<div class="submit submit_project">
+				<button type="submit" formmethod="post" class="submint_button submit_project_button">Отправить</button>
+			</div>
+			</form>
+			<div class="wrap_tooltips">
+				<div class="project_tooltip project_tooltip_name">Введите название</div>
+				<div class="project_tooltip project_tooltip_picture">Загрузите изображение</div>
+				<div class="project_tooltip project_tooltip_url">Ссылка на проект</div>
+				<div class="project_tooltip project_tooltip_disc">Описание проекта</div>
+			</div>
+		</div>
 		<div class="empty"></div>
 	</div>	
 		<footer class='final'>
@@ -198,6 +237,7 @@
 				</div>
 			</div>
 		</footer>
-	<script type="text/javascript" src='bower/jquery/jquery.js'></script>
+
+	<script type="text/javascript" src='js/add_project.js'></script>
 </body>
 </html>

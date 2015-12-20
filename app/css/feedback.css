@@ -2,9 +2,10 @@
 	font-family: 'Open Sans Regular';
 }
 .wrapForm {
+	position : relative;
 	width: 400px;
 	margin-left: 125px;
-	margin-top: -5px;
+	//margin-top: -5px;
 }
 .cf:before,
 .cf:after {
@@ -20,19 +21,25 @@
 .form_email {
 	float: right;
 }
+input, textarea {
+	resize:none;
+}
 .form_name, .form_email, .message, .captcha {
+	position: relative;
 	font-family: 'Open Sans Regular';
 	font-size: 14px;
 	color: #727070;
+
 }
 .first_form_input {
+
 	width: 180px;
 	height: 30px;
-	margin-top: 5px;
 	padding: 5px;
 	border : 1px solid #d6d5d3;
 	border-radius : 5px;
 	background-image: -webkit-linear-gradient(270deg, #fbfcfd , #f4f4f4 );
+
 }
 
 .first_form_input_text {
@@ -48,7 +55,6 @@
 .message_input {
 	width: 388px;
 	height: 170px;
-	margin-top: 8px;
 	padding: 5px;
 	border : 1px solid #d6d5d3;
 	border-radius : 5px;
@@ -59,7 +65,7 @@
 	font-size: 12px;
 }
 .input_error {
-	border: 1px solid #e0ad9a;
+	border: 1px solid #e0ac98;
 	box-shadow: 0 0 0 1px #efdbd5, inset 0 0 0 1px #d6d5d3;
 }
 .captcha {

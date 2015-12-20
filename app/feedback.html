@@ -26,6 +26,12 @@
 	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+	<link rel="stylesheet" type="text/css" href="css/style_my_work.css">
+	<script type="text/javascript">var ie = 0;</script>
+	<!--[if IE 8]><script type="text/javascript">
+    					ie = 8;
+					</script>
+		<![endif]-->
 	<script type="text/javascript" src='js/modernizr.js'></script>	
 	<script type="text/javascript" src='bower/jquery/jquery.js'></script>
 	<script type="text/javascript" src='bower/jquery-placeholder/jquery.placeholder.js'></script>
@@ -36,16 +42,16 @@
 		<header class="header">
 			<div class="wrapHeader cf">
 				<div class="logo">
-					<a href="http://bzavoevanyy.ru" alt="bzavoevanyy.ru">
+					<a href="http://bzavoevanyy.ru">
 						<img src="images/logo.png" alt='logo'>
 					</a>
 				</div>
 				<div class="socNetMenu">
 					<ul class="socNetMenu_line">
-						<li><a href="https://www.facebook.com/bogdan.zavoevanyy" alt ='Facebook' target="_blank" class="sprite sprite-facebook"></a></li>
-						<li><a href="https://vk.com/id88201108" target="_blank" alt='vk.com' class="sprite sprite-vk"></a></li>
-						<li><a href="https://twitter.com/BZavoevanyy" target="_blank" alt='twitter' class="sprite sprite-twitter"></a></li>
-						<li><a href="https://github.com/bzavoevanyy" target="_blank" alt='github' class="sprite sprite-github"></a></li>
+						<li><a href="https://www.facebook.com/bogdan.zavoevanyy" target="_blank" class="sprite sprite-facebook"></a></li>
+						<li><a href="https://vk.com/id88201108" target="_blank" class="sprite sprite-vk"></a></li>
+						<li><a href="https://twitter.com/BZavoevanyy" target="_blank" class="sprite sprite-twitter"></a></li>
+						<li><a href="https://github.com/bzavoevanyy" target="_blank" class="sprite sprite-github"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -55,13 +61,13 @@
 				<nav class="mainMenu">
 					<ul>
 						<li class="mainMenu_element top_border">
-							<a href="index.html" class="blockLink" alt="index.html">Обо мне</a>
+							<a href="index.html" class="blockLink">Обо мне</a>
 						</li>
 						<li class="mainMenu_element">
-							<a href="my_work.html" class="blockLink" alt="my_work.html">Мои работы</a>
+							<a href="my_work.html" class="blockLink">Мои работы</a>
 						</li>
 						<li class="mainMenu_element mainMenu_element_current current_bottom">
-							<a href="feedback.html" class="blockLink blockLink_current" alt="feedback.html">Обратная связь</a>
+							<a href="feedback.html" class="blockLink blockLink_current">Обратная связь</a>
 						</li>
 					</ul>
 				</nav>
@@ -69,11 +75,11 @@
 					<ul>
 						<li class="head_yellow"><p class="contactMenu_head">Контакты</p></li>
 						<li class="contactMenu_element">
-							<div class="contactMenu_block"><a href="mailto:bzavoevanyy@gmail.com" alt='e-mail' class=" contactMenu_sprite_email contactMenu_element_text">bzavoevanyy@gmail.com</a>
+							<div class="contactMenu_block"><a href="mailto:bzavoevanyy@gmail.com" class=" contactMenu_sprite_email contactMenu_element_text">bzavoevanyy@gmail.com</a>
 							</div></li>
-						<li class="contactMenu_element"><div class="contactMenu_block"><a href="tel:+79821853600" alt='phone' class="contactMenu_element_text contactMenu_sprite_phone">+79821853600</a></div>
+						<li class="contactMenu_element"><div class="contactMenu_block"><a href="tel:+79821853600" class="contactMenu_element_text contactMenu_sprite_phone">+79821853600</a></div>
 						</li>
-						<li class="contactMenu_element"><div class="contactMenu_block"><a href="skype:bzavoevanyy?chat" alt='skype' class="contactMenu_element_text contactMenu_sprite_skype">bzavoevanyy</a></div></li>
+						<li class="contactMenu_element"><div class="contactMenu_block"><a href="skype:bzavoevanyy?chat" class="contactMenu_element_text contactMenu_sprite_skype">bzavoevanyy</a></div></li>
 					</ul>
 				</div>
 			</div>
@@ -85,20 +91,24 @@
 				<div class="email_tooltip tooltips">Введите e-mail</div>
 				<div class="message_tooltip tooltips">Ваш вопрос</div>
 				<div class="captcha_tooltip tooltips">Пройдите проверку</div>
-				<form id="feedback" name='feedback' method="GET">
+				<form id="feedback" name='feedback' method="POST">
 					<div class="wrapForm cf">
 						<div class="first_form cf">
+							<label>
 							<div class="form_name">
-								<p>Имя</p>
+								<p class="headline">Имя</p>
 								<input  id='name' name='name' class='first_form_input first_form_input_text' type="text" placeholder="Введите свое имя" ></input>
 							</div>
+							</label>
+							<label>
 							<div class="form_email">
-								<p>Email</p>
+								<p class="headline">Email</p>
 								<input id='email' name='email' class='first_form_input first_form_input_text' type="text" placeholder="Введите свой email" ></input>
 							</div>
+							</label>
 						</div>
 						<div class="message">
-							<p>Сообщение</p>
+							<p class="headline">Сообщение</p>
 							<textarea  id='message' name='message' class='message_input first_form_input_text' placeholder="Кратко в чем суть" ></textarea>
 						</div>
 						<div class="captcha">
@@ -116,7 +126,7 @@
 		<footer class='final'>
 			<div class="footer">
 				<div>
-					<a class="footer_login login" href="login.html" alt='login.html'></a>
+					<a class="footer_login login" href="login.html"></a>
 				</div>
 				<div class="footer_copyright">
 					<p>&#169;2015. Это мой сайт, пожалуйста не копируйте и не воруйте его</p>
@@ -124,6 +134,8 @@
 			</div>
 		</footer>
 	<script type="text/javascript" src='js/placeholder.js'></script>
+	<script type="text/javascript" src='js/tooltips.js'></script>
 	<script type="text/javascript" src='js/feedback.js'></script>
+
 </body>
 </html>

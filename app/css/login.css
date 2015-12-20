@@ -1,0 +1,95 @@
+
+.wrapper {
+	text-align: center;
+}
+.wrapContent {
+	position: fixed;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+.wrapContent:after {
+	position: relative;
+	content: '';
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+	zoom:1;
+}
+.login_window {
+	display: inline-block;
+	width: 330px;
+	
+	border-radius: 7px;
+	border : 1px solid #bababa;
+	background-color: #fbfbfa;
+	background-image: -moz-linear-gradient(#fbfbfa, #f0eeed);
+    background-image: -webkit-linear-gradient(#fbfbfa, #f0eeed);
+	background-image: -ms-linear-gradient(#fbfbfa, #f0eeed);
+	box-shadow: 1px 1px 1px  #bababa;
+	vertical-align: middle;
+}
+.login_window:before {
+	position: relative;
+	content: 'Авторизируйтесь';
+	font-family: 'Open Sans Lite';
+	font-size: 12px;
+	top: -25px;
+	left: -105px;
+	color: #727070;
+}
+.login_email, .password {
+	
+	width: 195px;
+	height: 36px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	border : 1px solid #bababa;
+	font-family: 'Open Sans Lite';
+	font-size: 12px;
+	color: #c7c6c6;
+	padding-left: 60px;
+	background-color: #fbfcfd;
+	background-image: linear-gradient(#fbfcfd , #f4f4f4 );
+	resize:none;
+}
+.img_input {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	margin-left: 45px;
+}
+.checkbox + label.checkbox_text:before {
+    content: "";
+    display: inline-block;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+    background-color: white;
+   	background-repeat: no-repeat;
+   	border-radius: 2px;
+   	box-shadow: 0 1px #e5e4e3, inset 0 1px #d1d0d0;
+}
+.checkbox:checked + label.checkbox_text:before {
+	background-image: url(../images/checkmark.png);
+	background-repeat: no-repeat;
+	background-position: 3px 4px;
+}
+.checkbox_text {
+	margin-left: -115px;
+	font-family: 'Open Sans Regular';
+	font-size: 14px;
+	color: #727070;
+}
+.submit_project_button {
+	margin-bottom: 40px !important;
+	margin-top: 20px !important;
+}
+
+
+

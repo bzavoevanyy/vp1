@@ -9,7 +9,7 @@ $url = $_POST['URL'];
 $disc = $_POST['disc'];
 
 $data = Array();
-
+ChromePhp::log(phpinfo());
 ChromePhp::log($_FILES);
 ChromePhp::log($_POST);
 ChromePhp::log($_GET);
